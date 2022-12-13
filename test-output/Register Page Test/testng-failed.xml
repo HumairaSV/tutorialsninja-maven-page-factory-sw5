@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Register Page Test]">
+  <listeners>
+    <listener class-name="com.tutorialsninja.customlisteners.CustomListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Register Page Test(failed)">
+    <classes>
+      <class name="com.tutorialsninja.testsuite.RegisterPageTest">
+        <methods>
+          <include name="verifyUserShouldNavigateToRegisterPageSuccessfully"/>
+          <include name="verifyThatUserRegisterAccountSuccessfully"/>
+          <include name="tearDown"/>
+          <include name="inIt"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.testsuite.RegisterPageTest -->
+    </classes>
+  </test> <!-- Register Page Test(failed) -->
+</suite> <!-- Failed suite [Register Page Test] -->

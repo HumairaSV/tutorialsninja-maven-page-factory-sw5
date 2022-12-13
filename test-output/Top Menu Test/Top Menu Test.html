@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:  Top Menu Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Top Menu Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Dec 12 11:27:44 GMT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>10 seconds (10277 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.TopMenuTest.verifyUserShouldNavigateToComponentsPageSuccessfully()'><b>verifyUserShouldNavigateToComponentsPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.TopMenuTest<br/>
+<a href="#Output-699871906" onClick='toggleBox("Output-699871906", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-699871906" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-699871906">
+Hover the mouse on Components tab and click[[ChromeDriver: chrome on WINDOWS (bfee8d8d5bcda920315c346b3e4fddc3)] -> link text: Components]<br/>
+Select show all Components from drop down[[[ChromeDriver: chrome on WINDOWS (bfee8d8d5bcda920315c346b3e4fddc3)] -> link text: Show All Components]]<br/>
+Verify the Components page name[[ChromeDriver: chrome on WINDOWS (bfee8d8d5bcda920315c346b3e4fddc3)] -> xpath: //h2[contains(text(),'Components')]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.testsuite.TopMenuTest@704d6e83</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.TopMenuTest.verifyUserShouldNavigateToDesktopsPageSuccessfully()'><b>verifyUserShouldNavigateToDesktopsPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.TopMenuTest<br/>
+<a href="#Output-115086468" onClick='toggleBox("Output-115086468", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-115086468" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-115086468">
+Hover the mouse on Desktops tab and click[[ChromeDriver: chrome on WINDOWS (3a09b59bf127980087f183d3e29aea84)] -> link text: Desktops]<br/>
+Select show all desktops from drop down[[[ChromeDriver: chrome on WINDOWS (3a09b59bf127980087f183d3e29aea84)] -> link text: Show All Desktops]]<br/>
+Verify the Desktop page name[[ChromeDriver: chrome on WINDOWS (3a09b59bf127980087f183d3e29aea84)] -> xpath: //h2[contains(text(),'Desktops')]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.testsuite.TopMenuTest@704d6e83</td></tr>
+<tr>
+<td title='com.tutorialsninja.testsuite.TopMenuTest.verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully()'><b>verifyUserShouldNavigateToLaptopsAndNotebooksPageSuccessfully</b><br>Test class: com.tutorialsninja.testsuite.TopMenuTest<br/>
+<a href="#Output-657998502" onClick='toggleBox("Output-657998502", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-657998502" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-657998502">
+Hover the mouse on Laptops & Notebooks tab and click[[ChromeDriver: chrome on WINDOWS (bf6524b658cfce8af2ea96259a4f85ce)] -> link text: Laptops & Notebooks]<br/>
+Select show all Laptops & Notebooks from drop down[[[ChromeDriver: chrome on WINDOWS (bf6524b658cfce8af2ea96259a4f85ce)] -> link text: Show All Laptops & Notebooks]]<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.tutorialsninja.testsuite.TopMenuTest@704d6e83</td></tr>
+</table><p>
+</body>
+</html>

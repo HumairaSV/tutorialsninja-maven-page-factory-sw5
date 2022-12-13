@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Account Login Page Test]">
+  <listeners>
+    <listener class-name="com.tutorialsninja.customlisteners.CustomListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Account Login Page Test(failed)">
+    <classes>
+      <class name="com.tutorialsninja.testsuite.AccountLoginPageTest">
+        <methods>
+          <include name="inIt"/>
+          <include name="tearDown"/>
+          <include name="verifyThatUserShouldLoginAndLogoutSuccessfully"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.testsuite.AccountLoginPageTest -->
+    </classes>
+  </test> <!-- Account Login Page Test(failed) -->
+</suite> <!-- Failed suite [Account Login Page Test] -->

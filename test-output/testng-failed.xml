@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Sanity Test]">
+  <listeners>
+    <listener class-name="com.tutorialsninja.customlisteners.CustomListeners"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test thread-count="5" name="Sanity Test(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.tutorialsninja.testsuite.DesktopPageTest">
+        <methods>
+          <include name="inIt"/>
+          <include name="verifyProductArrangeInAlphabeticalOrder"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.testsuite.DesktopPageTest -->
+      <class name="com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest">
+        <methods>
+          <include name="inIt"/>
+          <include name="verifyProductsPriceDisplayHighToLowSuccessfully"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.tutorialsninja.testsuite.LaptopsAndNotebooksPageTest -->
+    </classes>
+  </test> <!-- Sanity Test(failed) -->
+</suite> <!-- Failed suite [Sanity Test] -->
